@@ -1,0 +1,26 @@
+# Frontend Environment Variables Configuration
+# Create this file as 'client/.env' for local development
+# Set these variables in your deployment platform dashboard
+
+# React Frontend Environment Variables
+REACT_APP_API_URL=https://your-backend-url.com/api
+
+# Deployment Platform Examples:
+# ================================
+
+# For Railway + Vercel:
+# REACT_APP_API_URL=https://your-railway-app.up.railway.app/api
+
+# For Render (Frontend + Backend):
+# REACT_APP_API_URL=https://your-backend.onrender.com/api
+
+# For Local Development:
+# REACT_APP_API_URL=http://localhost:5000/api
+
+# For Netlify:
+# REACT_APP_API_URL=https://your-netlify-app.netlify.app/api
+
+# Instructions:
+# 1. Copy the appropriate REACT_APP_API_URL for your backend
+# 2. Create 'client/.env' file with the correct URL
+# 3. For production deployment, set this in your platform dashboard
