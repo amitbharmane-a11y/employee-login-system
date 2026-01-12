@@ -1,0 +1,13 @@
+{
+  "service": "employee-frontend",
+  "type": "web",
+  "runtime": "static",
+  "buildCommand": "npm install && npm run build",
+  "staticPublishPath": "./build",
+  "envVars": [
+    {
+      "key": "REACT_APP_API_URL",
+      "sync": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "cd server && npm start"
+  },
+  "environments": [
+    {
+      "name": "production",
+      "envVars": [
+        {
+          "key": "NODE_ENV",
+          "value": "production"
+        },
+        {
+          "key": "PORT",
+          "value": "5000"
+        },
+        {
+          "key": "MONGO_URI",
+          "value": "mongodb+srv://username:password@cluster.mongodb.net/employee_attendance_prod?retryWrites=true&w=majority"
+        },
+        {
+          "key": "JWT_SECRET",
+          "value": "your-super-secure-jwt-secret-for-production-change-this-immediately"
+        },
+        {
+          "key": "CORS_ORIGIN",
+          "value": "https://your-frontend-domain.vercel.app"
+        }
+      ]
+    }
+  ]
+}

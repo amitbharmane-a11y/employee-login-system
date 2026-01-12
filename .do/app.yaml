@@ -1,0 +1,43 @@
+name: employee-login-system
+services:
+- name: backend
+  source_dir: server
+  github:
+    repo: your-username/employee-login-system
+    branch: main
+  run_command: npm start
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  envs:
+  - key: NODE_ENV
+    value: production
+  - key: PORT
+    value: "8080"
+  - key: MONGO_URI
+    type: SECRET
+  - key: JWT_SECRET
+    type: SECRET
+  - key: CORS_ORIGIN
+    type: SECRET
+
+- name: frontend
+  source_dir: client
+  github:
+    repo: your-username/employee-login-system
+    branch: main
+  build_command: npm run build
+  static_site_generator: create-react-app
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  envs:
+  - key: REACT_APP_API_URL
+    type: SECRET
+
+databases:
+- name: mongodb
+  engine: MongoDB
+  version: "5"
+  size: basic
+  num_nodes: 1
