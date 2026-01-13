@@ -1,5 +1,5 @@
 NODE_ENV=production
 PORT=10000
-MONGO_URI=mongodb+srv://user1:Ab9420254825@@cluster0.rfxjf0j.mongodb.net/employee_attendance_prod?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://user1:Ab9420254825@cluster0.rfxjf0j.mongodb.net/employee_attendance_prod?retryWrites=true&w=majority
 JWT_SECRET=f6ff32a8907c3353cb10b378d1bf9dbf033bc73e15e104626ba24a389b8fc050
 CORS_ORIGIN=https://employee-login-system.vercel.app
