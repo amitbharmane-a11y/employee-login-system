@@ -2,7 +2,7 @@
   "service": "employee-backend",
   "type": "web",
   "runtime": "node",
-  "rootDir": ".",
+  "rootDir": "backend",
   "buildCommand": "npm install",
   "startCommand": "npm start",
   "envVars": [
