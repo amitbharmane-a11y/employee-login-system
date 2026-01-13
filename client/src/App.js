@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
-import Login from '../components/Login';
-import Dashboard from '../components/Dashboard';
-import EmployeeDashboard from '../components/EmployeeDashboard';
-import AdminDashboard from '../components/AdminDashboard';
-import AttendanceHistory from '../components/AttendanceHistory';
-import EmployeeManagement from '../components/EmployeeManagement';
-import AttendanceReports from '../components/AttendanceReports';
-import PrivateRoute from '../components/PrivateRoute';
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+import EmployeeDashboard from './components/EmployeeDashboard';
+import AdminDashboard from './components/AdminDashboard';
+import AttendanceHistory from './components/AttendanceHistory';
+import EmployeeManagement from './components/EmployeeManagement';
+import AttendanceReports from './components/AttendanceReports';
+import PrivateRoute from './components/PrivateRoute';
 import './index.css';
 
 function App() {
